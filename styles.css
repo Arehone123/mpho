@@ -1,0 +1,38 @@
+body {
+    background-color:#fffafa ; /* Set your desired background color */
+}
+
+footer {
+    background-color: #008080 ;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+body {
+    background-image: url('background-image.jpg'); /* Replace 'background-image.jpg' with the path to your image */
+    background-size: cover; /* Cover the entire background */
+    background-position: center; /* Center the background image */
+}
+
+footer {
+    background-color: #33ffff;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-links {
+    display: inline-block;
+}
+
+.footer-links a {
+    color: black;
+    text-decoration: none;
+    margin: 0 10px;
+
+
+    .link-container {
+        margin-bottom: 20px; /* Adjust the margin as per your preference */
+    }
+}
