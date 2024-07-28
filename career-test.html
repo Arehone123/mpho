@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Services</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: ghostwhite;
+      color: #444;
+    }
+
+    .navbar {
+      width: 100%;
+      background-color: #444;
+      display: flex;
+      align-items: center;
+      padding: 10px;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 2;
+    }
+
+    .menu {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+    }
+
+    .menu li {
+      margin-right: 20px;
+    }
+
+    .menu li a {
+      text-decoration: none;
+      color: white;
+      padding: 10px;
+    }
+
+    .menu li a:hover {
+      background-color: rgba(255, 255, 255, 0.5);
+      border-radius: 5px;
+      transform: scale(1.1);
+    }
+
+    .icon {
+      margin-right: 10px;
+    }
+
+    main {
+      padding: 80px 20px 20px; /* Adjust padding to account for fixed navbar */
+    }
+
+    main h2, main h3 {
+      color: #00bcd4;
+    }
+
+    main p {
+      font-size: 18px;
+      line-height: 1.6;
+      margin-bottom: 20px;
+    }
+
+    .btn-primary {
+      background-color: #00bcd4;
+      border-color: #00bcd4;
+    }
+
+    .btn-primary:hover {
+      background-color: #0097a7;
+      border-color: #0097a7;
+    }
+
+    table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+
+    th, td {
+      border: 1px solid black;
+      padding: 8px;
+      text-align: center;
+    }
+
+    /* Form styling */
+    .form-group {
+      margin-bottom: 15px;
+    }
+
+    .form-group label {
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <ul class="menu" id="menu">
+      <li><a href="index.html"><i class="fas fa-home icon"></i> Home</a></li>
+      <li><a href="about.html"><i class="fas fa-info-circle icon"></i> About</a></li>
+      <li><a href="services.html"><i class="fas fa-concierge-bell icon"></i> Services</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <div class="container mt-5">
+      <h2>Our Services</h2>
+      <p>Welcome to our services page. Here, you can explore various career opportunities, take career assessment tests, and learn about in-demand STEM fields and related educational opportunities.</p>
+
+      <!-- Career Assessment Test -->
+      <section id="career-assessment-test" class="my-5">
+        <h3>Career Assessment Test</h3>
+        <p>Take our career assessment test to discover the best career path for you.</p>
+        <form>
+          <!-- Personal Questions -->
+          <div class="form-group">
+            <label for="name">What is your name?</label>
+            <input type="text" class="form-control" id="name" required>
+          </div>
+          <div class="form-group">
+            <label for="surname">What is your surname?</label>
+            <input type="text" class="form-control" id="surname" required>
+          </div>
+          <div class="form-group">
+            <label for="dob">Date of Birth (DD/MM/YYYY)</label>
+            <input type="text" class="form-control" id="dob" required>
+          </div>
+          <div class="form-group">
+            <label for="race">Race</label>
+            <input type="text" class="form-control" id="race" required>
+          </div>
+          <div class="form-group">
+            <label for="continent">Continent</label>
+            <input type="text" class="form-control" id="continent" required>
+          </div>
+          <div class="form-group">
+            <label for="country">Country</label>
+            <input type="text" class="form-control" id="country" required>
+          </div>
+          <div class="form-group">
+            <label for="province">Province</label>
+            <input type="text" class="form-control" id="province" required>
+          </div>
+          <div class="form-group">
+            <label for="town">Town</label>
+            <input type="text" class="form-control" id="town" required>
+          </div>
+          <div class="form-group">
+            <label for="home_language">Home Language</label>
+            <input type="text" class="form-control" id="home_language" required>
+          </div>
+
+          <!-- Academic Information -->
+          <div class="form-group">
+            <label for="education_level">Highest Level of Education</label>
+            <input type="text" class="form-control" id="education_level" required>
+          </div>
+          <div class="form-group">
+            <label for="matric">Do you have matric?</label>
+            <select class="form-control" id="matric" required>
+              <option value="">Select</option>
+              <option value="yes">Yes</option>
+              <option value="no">No</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="subjects_marks">Subjects and Their Marks</label>
+            <textarea class="form-control" id="subjects_marks" rows="3" required></textarea>
+          </div>
+          <div class="form-group">
+            <label for="next_institution">Next Institution You Would Like to Attend</label>
+            <input type="text" class="form-control" id="next_institution" required>
+          </div>
+          <div class="form-group">
+            <label for="course">Course You Would Like to Study</label>
+            <input type="text" class="form-control" id="course" required>
+          </div>
+
+          <!-- Preferences -->
+          <div class="form-group">
+            <label for="close_to_home">Would you want an institution close to your home?</label>
+            <select class="form-control" id="close_to_home" required>
+              <option value="">Select</option>
+              <option value="yes">Yes</option>
+              <option value="no">No</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="study_province">Which province would you like to study in?</label>
+            <input type="text" class="form-control" id="study_province" required>
+          </div>
+          <div class="form-group">
+            <label for="performance_matter">Does the overall institution performance matter for you?</label>
+            <select class="form-control" id="performance_matter" required>
+              <option value="">Select</option>
+              <option value="yes">Yes</option>
+              <option value="no">No</option>
+            </select>
+          </div>
+
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </section>
+
+      <!-- STEM Subjects Introduction -->
+      <section id="stem-introduction" class="my-5">
+        <h3>Introduction to STEM Subjects</h3>
+        <p>Explore opportunities in STEM (Science, Technology, Engineering, and Mathematics). Learn about different STEM subjects, universities and schools that offer specialized programs, and available scholarships and bursaries.</p>
+      </section>
+
+      <!-- Universities and Schools Offering STEM -->
+      <section id="stem-universities" class="my-5">
+        <h3>Universities and Schools Offering STEM Programs</h3>
+        <p>Here are some top institutions that specialize in STEM subjects:</p>
+        <ul>
+          <li>Massachusetts Institute of Technology (MIT)</li>
+          <li>Stanford University</li>
+          <li>California Institute of Technology (Caltech)</li>
+          <li>University of Cambridge</li>
+          <li>University of Oxford</li>
+          <li>Harvard University</li>
+          <li>ETH Zurich - Swiss Federal Institute of Technology</li>
+        </ul>
+      </section>
+    </div>
+  </main>
+</body>
+</html>
