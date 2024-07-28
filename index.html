@@ -3,56 +3,241 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pfunzo - Career Guidance</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Background Image with Overlay and Text</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* styles.css */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+            background-color: ghostwhite;
+        }
+
+        .navbar {
+            width: 100%;
+            background-color: #444;
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 10;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .menu-button {
+            font-size: 30px;
+            color: #00bcd4;
+            cursor: pointer;
+            margin-right: 20px;
+        }
+
+        .menu {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+        }
+
+        .menu li {
+            margin-right: 20px;
+        }
+
+        .menu li a {
+            text-decoration: none;
+            color: white;
+            padding: 10px;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .menu li a:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+            border-radius: 5px;
+            transform: scale(1.1);
+        }
+
+        .icon {
+            margin-right: 10px;
+        }
+
+        .background-container {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            background-image: url('BACKI.jpeg');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .overlay {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 1;
+        }
+
+        .text-container {
+            position: relative;
+            z-index: 2;
+            color: white;
+            text-align: left;
+            max-width: 900px;
+        }
+
+        .text-container h1 {
+            font-size: 4em;
+            margin: 0;
+            line-height: 1.2;
+        }
+
+        .text-container h1 + h1 {
+            margin-top: 10px;
+        }
+
+        .read-more-btn {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            display: inline-block;
+            transition: background-color 0.3s ease;
+            margin-top: 20px;
+            font-size: 1.2em;
+        }
+
+        .read-more-btn:hover {
+            background-color: #0056b3;
+        }
+
+        .read-more-btn i {
+            margin-left: 5px;
+        }
+
+        .read-more-btn a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .slideshow-container {
+            position: relative;
+            z-index: 2;
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .slide {
+            display: none;
+            transition: opacity 0.5s ease-in-out;
+        }
+
+        .slide img {
+            height: 300px;
+            width: 400px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .fade {
+            opacity: 0;
+            transition: opacity 1s;
+        }
+
+        .fade.show {
+            opacity: 1;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#features">Features</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+<nav class="navbar">
+    <ul class="menu" id="menu">
+        <li><a href="index.html"><i class="fas fa-home icon"></i> Home</a></li>
+        <li><a href="about.html"><i class="fas fa-info-circle icon"></i> About</a></li>
+        <li><a href="services.html"><i class="fas fa-concierge-bell icon"></i> Services</a></li>
+        <li><a href="STEM.html"><i class="fas fa-concierge-bell icon"></i> STEM</a></li>
+    </ul>
+</nav>
+<div class="background-container">
+    <div class="overlay"></div>
+    <div class="text-container">
+        <h1>You want to start</h1>
+        <h1>your journey to success?</h1>
+        <button class="read-more-btn">
+            <a href="about.html"><b>Read More</b> <i class="fas fa-arrow-right"></i></a>
+        </button>
+    </div>
+    <div class="slideshow-container">
+        <div class="slide fade">
+            <img src="quote1.jpg" alt="Quote 1">
+        </div>
+        <div class="slide fade">
+            <img src="quote2.jpg" alt="Quote 2">
+        </div>
+        <div class="slide fade">
+            <img src="quote3.jpg" alt="Quote 3">
+        </div>
+        <div class="slide fade">
+            <img src="quote4.jpg" alt="Quote 4">
+        </div>
+        <div class="slide fade">
+            <img src="quote5.jpg" alt="Quote 5">
+        </div>
+    </div>
+</div>
 
-    <section id="home">
-        <h1>Welcome to Pfunzo</h1>
-        <p>Your ultimate career guidance platform</p>
-        <button onclick="navigateTo('career-guidance')">Get Started</button>
-    </section>
+<script>
+    let currentSlideIndex = 0;
+    const slides = document.querySelectorAll('.slide');
 
-    <section id="about">
-        <h2>About Us</h2>
-        <p>Pfunzo helps students choose the right career path based on their subjects and interests.</p>
-    </section>
+    function showSlide(index) {
+        slides.forEach((slide, i) => {
+            slide.classList.remove('show');
+            if (i === index) {
+                slide.classList.add('show');
+            }
+        });
+    }
 
-    <section id="features">
-        <h2>Features</h2>
-        <ul>
-            <li>Career Guidance</li>
-            <li>University Recommendations</li>
-            <li>Subject Analysis</li>
-            <li>Download Textbooks</li>
-        </ul>
-    </section>
+    function nextSlide() {
+        currentSlideIndex = (currentSlideIndex + 1) % slides.length;
+        showSlide(currentSlideIndex);
+    }
 
-    <section id="contact">
-        <h2>Contact Us</h2>
-        <form id="contactForm">
-            <input type="text" id="name" name="name" placeholder="Your Name" required>
-            <input type="email" id="email" name="email" placeholder="Your Email" required>
-            <textarea id="message" name="message" placeholder="Your Message" required></textarea>
-            <button type="submit">Send Message</button>
-        </form>
-    </section>
+    setInterval(nextSlide, 3000);
+    showSlide(currentSlideIndex);
+</script>
 
-    <footer>
-        <p>&copy; 2024 Pfunzo. All rights reserved.</p>
-    </footer>
+<script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-analytics.js";
 
-    <script src="scripts.js"></script>
+    const firebaseConfig = {
+        apiKey: "AIzaSyCIdatsp_QvAjdfIn0iYZenhvqjG4heUU8",
+        authDomain: "arehone-pro101.firebaseapp.com",
+        databaseURL: "https://arehone-pro101-default-rtdb.firebaseio.com",
+        projectId: "arehone-pro101",
+        storageBucket: "arehone-pro101.appspot.com",
+        messagingSenderId: "1010659652452",
+        appId: "1:1010659652452:web:2acbcf4faf3e4e011bc071",
+        measurementId: "G-4VDT6TNVJZ"
+    };
+
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+</script>
 </body>
 </html>
