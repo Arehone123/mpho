@@ -4,9 +4,69 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Our Services</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
 
   <style>
+    .navbar {
+      width: 100%;
+      background-color: #444;
+      display: flex;
+      align-items: center;
+      padding: 10px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 2;
+    }
+
+    .menu {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+    }
+
+    .menu li {
+      margin-right: 20px;
+    }
+
+    .menu li a {
+      text-decoration: none;
+      color: white;
+      padding: 10px;
+    }
+
+    .menu li a:hover {
+      background-color: rgba(255, 255, 255, 0.5);
+      border-radius: 5px;
+      transform: scale(1.1);
+    }
+
+    .icon {
+      margin-right: 10px;
+    }
+
+    main {
+      padding: 20px;
+    }
+
+    main h2 {
+      color: darkblue;
+    }
+
+    main p {
+      font-size: 18px;
+      line-height: 1.6;
+      margin-bottom: 20px;
+    }
+
+
+
+
     /* Style for the table */
     table {
       border-collapse: collapse;
@@ -21,211 +81,502 @@
     }
   </style>
 </head>
-<body>
+<body style="background-color: ghostwhite">
 <header>
-  <h1>Welcome to My Website</h1>
+
 
 </header>
-<main>
-  <h2>Our Services</h2>
-  <p>This is the our services page of our website.</p>
 
 
-  <body>
-  <!DOCTYPE html>
-  <html>
-  <head>
-    <style>
-      table {
-        border-collapse: collapse;
-        width: 50%;
-      }
 
-      td, th {
-        border: 1px solid black;
-        padding: 8px;
-        text-align: left;
-      }
-    </style>
-  </head>
-  <body>
-
-  <table>
-    <tr>
-      <th>Column 1</th>
-      <th>Column 2</th>
-    </tr>
-    <!-- Rows 1-5 -->
-    <tr>
-      <td rowspan="5">Spanned</td>
-      <td>Row 1</td>
-    </tr>
-    <tr>
-      <td>Row 2</td>
-    </tr>
-    <tr>
-      <td>Row 3</td>
-    </tr>
-    <tr>
-      <td>Row 4</td>
-    </tr>
-    <tr>
-      <td>Row 5</td>
-    </tr>
-    <!-- Rows 6-10 -->
-    <tr>
-      <td rowspan="5">Spanned</td>
-      <td>Row 6</td>
-    </tr>
-    <tr>
-      <td>Row 7</td>
-    </tr>
-    <tr>
-      <td>Row 8</td>
-    </tr>
-    <tr>
-      <td>Row 9</td>
-    </tr>
-    <tr>
-      <td>Row 10</td>
-    </tr>
-    <!-- Rows 11-15 -->
-    <!-- Repeat this block for each group -->
-    <tr>
-      <td rowspan="5">Spanned</td>
-      <td>Row 11</td>
-    </tr>
-    <tr>
-      <td>Row 12</td>
-    </tr>
-    <tr>
-      <td>Row 13</td>
-    </tr>
-    <tr>
-      <td>Row 14</td>
-    </tr>
-    <tr>
-      <td>Row 15</td>
-    </tr>
-    <!-- Rows 16-20 -->
-    <!-- Repeat this block for each group -->
-    <tr>
-      <td rowspan="5">Spanned</td>
-      <td>Row 16</td>
-    </tr>
-    <tr>
-      <td>Row 17</td>
-    </tr>
-    <tr>
-      <td>Row 18</td>
-    </tr>
-    <tr>
-      <td>Row 19</td>
-    </tr>
-    <tr>
-      <td>Row 20</td>
-    </tr>
-    <!-- Rows 21-25 -->
-    <!-- Repeat this block for each group -->
-    <tr>
-      <td rowspan="5">Spanned</td>
-      <td>Row 21</td>
-    </tr>
-    <tr>
-      <td>Row 22</td>
-    </tr>
-    <tr>
-      <td>Row 23</td>
-    </tr>
-    <tr>
-      <td>Row 24</td>
-    </tr>
-    <tr>
-      <td>Row 25</td>
-    </tr>
-    <!-- Rows 26-30 -->
-    <!-- Repeat this block for each group -->
-    <tr>
-      <td rowspan="5">Spanned</td>
-      <td>Row 26</td>
-    </tr>
-    <tr>
-      <td>Row 27</td>
-    </tr>
-    <tr>
-      <td>Row 28</td>
-    </tr>
-    <tr>
-      <td>Row 29</td>
-    </tr>
-    <tr>
-      <td>Row 30</td>
-    </tr>
-    <!-- Rows 31-35 -->
-    <!-- Repeat this block for each group -->
-    <tr>
-      <td rowspan="5">Spanned</td>
-      <td>Row 31</td>
-    </tr>
-    <tr>
-      <td>Row 32</td>
-    </tr>
-    <tr>
-      <td>Row 33</td>
-    </tr>
-    <tr>
-      <td>Row 34</td>
-    </tr>
-    <tr>
-      <td>Row 35</td>
-    </tr>
-  </table>
-
-  </bodY>
-  <button onclick="openForm()" class="button">Take Career Test</button>
-
-  <!-- Form container -->
-  <div class="form-container" id="myForm">
-    <!-- Close button -->
-    <button class="close-button" onclick="closeForm()">×</button>
-
-    <!-- Form -->
-    <form action="/submit_career_test" method="post">
-      <!-- Your form fields here -->
-      <label for="name">Name:</label>
-      <input type="text" id="name" name="surname and intials" required>
-
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email" required>
-      <textarea id="textareaBox" name="textareaBox" rows="4" cols="50" placeholder="TALK TO US"></textarea>
-
-      <input type="submit" value="Submit">
-      <a href="path/to/your/file.pdf" download>Download PDF</a>
-    </form>
-  </div>
-
-  <script>
-    // Function to open the form
-    function openForm() {
-      document.getElementById("myForm").style.display = "block";
-    }
-
-    // Function to close the form
-    function closeForm() {
-      document.getElementById("myForm").style.display = "none";
-    }
-  </script>
-</main>
-<footer>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About Us</a>
-
+  <body style="background-color: #1c1c1c">
+  <nav class="navbar">
+    <ul class="menu" id="menu" style="align-content: center ; ">
+      <li><a href="index.html"><i class="fas fa-home icon"></i> Home</a></li>
+      <li><a href="about.html"><i class="fas fa-info-circle icon"></i> About</a></li>
+      <li><a href="services.html"><i class="fas fa-concierge-bell icon"></i> Services</a></li>
+      <li><a href="STEM.html"><i class="fas fa-concierge-bell icon"></i> STEM</a></li>
+    </ul>
   </nav>
 
+  <main>
+    <div class="container mt-5">
+      <h2 style="color: #00bcd4">Our Services</h2>
+      <p style="color: black">Welcome to our services page. Take a career assessment test and explore in-demand careers in various faculties at the University of Pretoria.</p>
+
+      <!-- Career Assessment Test -->
+      <section id="career-assessment-test" class="my-5">
+        <h3 style="color: #00bcd4">Career Assessment Test</h3>
+        <p style="color: black">Take our career assessment test to discover the best career path for you.</p>
+        <a href="https://images.examples.com/wp-content/uploads/2017/03/Career-Planning-Self-Assessment.jpg" class="btn btn-primary">Take Test</a>
+      </section>
+
+      <main>
+        <div class="container mt-5">
+          <h2 style="color: black">Top In-Demand Jobs</h2>
+
+          <!-- Faculty Dropdown -->
+          <div class="mb-3" style="background-color: #222">
+            <label for="facultyDropdown" class="form-label">Select Faculty:</label>
+            <select class="form-select" id="facultyDropdown">
+              <option selected disabled>Select Faculty</option>
+              <option value="economic_management">Faculty of Economic and Management Sciences</option>
+              <option value="education">Faculty of Education</option>
+              <option value="engineering">Faculty of Engineering, Built Environment and Information Technology</option>
+              <option value="health_sciences">Faculty of Health Sciences</option>
+              <option value="humanities">Faculty of Humanities</option>
+              <option value="law">Faculty of Law</option>
+              <option value="theology_religion">Faculty of Theology and Religion</option>
+              <option value="natural_agricultural">Faculty of Natural and Agricultural Sciences</option>
+              <option value="veterinary_science">Faculty of Veterinary Science</option>
+            </select>
+          </div>
+
+          <!-- Table to display in-demand jobs -->
+          <div id="inDemandJobsTable" class="d-none">
+            <h3 class="mb-3" style="color: black">Top In-Demand Jobs</h3>
+            <table class="table table-striped">
+              <thead>
+              <tr>
+                <th>Rank</th>
+                <th>Job Title</th>
+                <th>Average Salary (Rands)</th>
+                <th>Top institution</th>
+                <th>Degree/ Course </th>
+                <th>University site</th>
+              </tr>
+              </thead>
+              <tbody id="jobListBody">
+              <!-- Table rows will be dynamically added here -->
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </main>
+
+      <script>
+        const inDemandJobs = {
+          economic_management: [
+            {
+              rank: 1, title: "Financial Manager", salary: 120000,
+              university: "University of Cape Town",
+              requirements: "Bachelor's degree in finance or related field",
+              website: "http://www.uct.ac.za"
+            },
+            {
+              rank: 2, title: "Economist", salary: 100000,
+              university: "University of Pretoria",
+              requirements: "Bachelor's degree in economics",
+              website: "http://www.up.ac.za"
+            },
+            {
+              rank: 3, title: "Accountant", salary: 110000,
+              university: "Stellenbosch University",
+              requirements: "Bachelor's degree in accounting",
+              website: "http://www.sun.ac.za"
+            },
+            {
+              rank: 4, title: "Market Research Analyst", salary: 95000,
+              university: "University of Johannesburg",
+              requirements: "Bachelor's degree in marketing",
+              website: "http://www.uj.ac.za"
+            },
+            {
+              rank: 5, title: "Business Analyst", salary: 105000,
+              university: "University of KwaZulu-Natal",
+              requirements: "Bachelor's degree in business administration",
+              website: "http://www.ukzn.ac.za"
+            }
+          ],
+          education: [
+            {
+              rank: 1, title: "Teacher", salary: 85000,
+              university: "University of the Witwatersrand",
+              requirements: "Bachelor's degree in education",
+              website: "http://www.wits.ac.za"
+            },
+            {
+              rank: 2, title: "Education Administrator", salary: 90000,
+              university: "North-West University",
+              requirements: "Bachelor's degree in education administration",
+              website: "http://www.nwu.ac.za"
+            },
+            {
+              rank: 3, title: "Guidance Counselor", salary: 80000,
+              university: "University of the Western Cape",
+              requirements: "Bachelor's degree in counseling",
+              website: "http://www.uwc.ac.za"
+            },
+            {
+              rank: 4, title: "Curriculum Developer", salary: 95000,
+              university: "University of Free State",
+              requirements: "Bachelor's degree in curriculum development",
+              website: "http://www.ufs.ac.za"
+            },
+            {
+              rank: 5, title: "Education Consultant", salary: 100000,
+              university: "Rhodes University",
+              requirements: "Bachelor's degree in education",
+              website: "http://www.ru.ac.za"
+            }
+          ],
+          engineering: [
+            {
+              rank: 1, title: "Software Engineer", salary: 130000,
+              university: "University of Pretoria",
+              requirements: "Bachelor's degree in software engineering",
+              website: "http://www.up.ac.za"
+            },
+            {
+              rank: 2, title: "Civil Engineer", salary: 125000,
+              university: "University of Cape Town",
+              requirements: "Bachelor's degree in civil engineering",
+              website: "http://www.uct.ac.za"
+            },
+            {
+              rank: 3, title: "Mechanical Engineer", salary: 120000,
+              university: "Stellenbosch University",
+              requirements: "Bachelor's degree in mechanical engineering",
+              website: "http://www.sun.ac.za"
+            },
+            {
+              rank: 4, title: "Electrical Engineer", salary: 125000,
+              university: "University of Johannesburg",
+              requirements: "Bachelor's degree in electrical engineering",
+              website: "http://www.uj.ac.za"
+            },
+            {
+              rank: 5, title: "Chemical Engineer", salary: 128000,
+              university: "University of KwaZulu-Natal",
+              requirements: "Bachelor's degree in chemical engineering",
+              website: "http://www.ukzn.ac.za"
+            }
+          ],
+          health_sciences: [
+            {
+              rank: 1, title: "Registered Nurse", salary: 95000,
+              university: "University of Cape Town",
+              requirements: "Bachelor's degree in nursing",
+              website: "http://www.uct.ac.za"
+            },
+            {
+              rank: 2, title: "Medical Doctor", salary: 200000,
+              university: "University of the Witwatersrand",
+              requirements: "Bachelor's degree in medicine",
+              website: "http://www.wits.ac.za"
+            },
+            {
+              rank: 3, title: "Pharmacist", salary: 130000,
+              university: "University of Pretoria",
+              requirements: "Bachelor's degree in pharmacy",
+              website: "http://www.up.ac.za"
+            },
+            {
+              rank: 4, title: "Physiotherapist", salary: 105000,
+              university: "Stellenbosch University",
+              requirements: "Bachelor's degree in physiotherapy",
+              website: "http://www.sun.ac.za"
+            },
+            {
+              rank: 5, title: "Dietitian", salary: 100000,
+              university: "University of the Western Cape",
+              requirements: "Bachelor's degree in dietetics",
+              website: "http://www.uwc.ac.za"
+            }
+          ],
+          humanities: [
+            {
+              rank: 1, title: "Social Worker", salary: 85000,
+              university: "University of Johannesburg",
+              requirements: "Bachelor's degree in social work",
+              website: "http://www.uj.ac.za"
+            },
+            {
+              rank: 2, title: "Journalist", salary: 90000,
+              university: "Rhodes University",
+              requirements: "Bachelor's degree in journalism",
+              website: "http://www.ru.ac.za"
+            },
+            {
+              rank: 3, title: "Translator", salary: 80000,
+              university: "University of Pretoria",
+              requirements: "Bachelor's degree in languages",
+              website: "http://www.up.ac.za"
+            },
+            {
+              rank: 4, title: "Historian", salary: 95000,
+              university: "University of Cape Town",
+              requirements: "Bachelor's degree in history",
+              website: "http://www.uct.ac.za"
+            },
+            {
+              rank: 5, title: "Psychologist", salary: 100000,
+              university: "Stellenbosch University",
+              requirements: "Bachelor's degree in psychology",
+              website: "http://www.sun.ac.za"
+            }
+          ],
+          law: [
+            {
+              rank: 1, title: "Lawyer", salary: 120000,
+              university: "University of Pretoria",
+              requirements: "Bachelor's degree in law",
+              website: "http://www.up.ac.za"
+            },
+            {
+              rank: 2, title: "Legal Advisor", salary: 110000,
+              university: "University of Cape Town",
+              requirements: "Bachelor's degree in law",
+              website: "http://www.uct.ac.za"
+            },
+            {
+              rank: 3, title: "Paralegal", salary: 100000,
+              university: "University of Johannesburg",
+              requirements: "Diploma in paralegal studies",
+              website: "http://www.uj.ac.za"
+            },
+            {
+              rank: 4, title: "Judge", salary: 150000,
+              university: "Stellenbosch University",
+              requirements: "Bachelor's degree in law",
+              website: "http://www.sun.ac.za"
+            },
+            {
+              rank: 5, title: "Legal Secretary", salary: 90000,
+              university: "University of the Witwatersrand",
+              requirements: "Diploma in legal studies",
+              website: "http://www.wits.ac.za"
+            }
+          ],
+          theology_religion: [
+            {
+              rank: 1, title: "Pastor", salary: 90000,
+              university: "University of Pretoria",
+              requirements: "Bachelor's degree in theology",
+              website: "http://www.up.ac.za"
+            },
+            {
+              rank: 2, title: "Theologian", salary: 85000,
+              university: "University of Cape Town",
+              requirements: "Bachelor's degree in theology",
+              website: "http://www.uct.ac.za"
+            },
+            {
+              rank: 3, title: "Chaplain", salary: 80000,
+              university: "University of the Western Cape",
+              requirements: "Bachelor's degree in theology",
+              website: "http://www.uwc.ac.za"
+            },
+            {
+              rank: 4, title: "Religious Educator", salary: 95000,
+              university: "Stellenbosch University",
+              requirements: "Bachelor's degree in religious studies",
+              website: "http://www.sun.ac.za"
+            },
+            {
+              rank: 5, title: "Missionary", salary: 100000,
+              university: "University of Johannesburg",
+              requirements: "Bachelor's degree in theology",
+              website: "http://www.uj.ac.za"
+            }
+          ],
+          natural_agricultural: [
+            {
+              rank: 1, title: "Agricultural Scientist", salary: 110000,
+              university: "University of Pretoria",
+              requirements: "Bachelor's degree in agricultural science",
+              website: "http://www.up.ac.za"
+            },
+            {
+              rank: 2, title: "Botanist", salary: 100000,
+              university: "University of Cape Town",
+              requirements: "Bachelor's degree in botany",
+              website: "http://www.uct.ac.za"
+            },
+            {
+              rank: 3, title: "Agronomist", salary: 105000,
+              university: "Stellenbosch University",
+              requirements: "Bachelor's degree in agronomy",
+              website: "http://www.sun.ac.za"
+            },
+            {
+              rank: 4, title: "Zoologist", salary: 115000,
+              university: "University of the Witwatersrand",
+              requirements: "Bachelor's degree in zoology",
+              website: "http://www.wits.ac.za"
+            },
+            {
+              rank: 5, title: "Forester", salary: 120000,
+              university: "University of Johannesburg",
+              requirements: "Bachelor's degree in forestry",
+              website: "http://www.uj.ac.za"
+            }
+          ],
+          veterinary_science: [
+            {
+              rank: 1, title: "Veterinarian", salary: 140000,
+              university: "University of Pretoria",
+              requirements: "Bachelor's degree in veterinary science",
+              website: "http://www.up.ac.za"
+            },
+            {
+              rank: 2, title: "Veterinary Nurse", salary: 90000,
+              university: "University of Cape Town",
+              requirements: "Bachelor's degree in veterinary nursing",
+              website: "http://www.uct.ac.za"
+            },
+            {
+              rank: 3, title: "Animal Scientist", salary: 110000,
+              university: "Stellenbosch University",
+              requirements: "Bachelor's degree in animal science",
+              website: "http://www.sun.ac.za"
+            },
+            {
+              rank: 4, title: "Veterinary Pathologist", salary: 130000,
+              university: "University of the Witwatersrand",
+              requirements: "Bachelor's degree in veterinary pathology",
+              website: "http://www.wits.ac.za"
+            },
+            {
+              rank: 5, title: "Animal Welfare Officer", salary: 100000,
+              university: "University of Johannesburg",
+              requirements: "Bachelor's degree in animal welfare",
+              website: "http://www.uj.ac.za"
+            }
+          ]
+        };
+
+        function populateTable(faculty) {
+          const jobs = inDemandJobs[faculty];
+          const tbody = document.getElementById("jobListBody");
+          tbody.innerHTML = "";
+          jobs.forEach(job => {
+            const row = `<tr>
+        <td>${job.rank}</td>
+        <td>${job.title}</td>
+        <td>${job.salary}</td>
+        <td>${job.university}</td>
+        <td>${job.requirements}</td>
+        <td><a href="${job.website}" target="_blank">Website</a></td>
+      </tr>`;
+            tbody.innerHTML += row;
+          });
+        }
+
+        // Event listener for faculty dropdown change
+        document.getElementById("facultyDropdown").addEventListener("change", function() {
+          const selectedFaculty = this.value;
+          if (selectedFaculty !== "Select Faculty") {
+            populateTable(selectedFaculty);
+            document.getElementById("inDemandJobsTable").classList.remove("d-none");
+          } else {
+            document.getElementById("inDemandJobsTable").classList.add("d-none");
+          }
+        });
+      </script>
+    </div>
+  </main>
+
+  <script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-analytics.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    const firebaseConfig = {
+      apiKey: "AIzaSyCIdatsp_QvAjdfIn0iYZenhvqjG4heUU8",
+      authDomain: "arehone-pro101.firebaseapp.com",
+      databaseURL: "https://arehone-pro101-default-rtdb.firebaseio.com",
+      projectId: "arehone-pro101",
+      storageBucket: "arehone-pro101.appspot.com",
+      messagingSenderId: "1010659652452",
+      appId: "1:1010659652452:web:2acbcf4faf3e4e011bc071",
+      measurementId: "G-4VDT6TNVJZ"
+    };
+
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+  </script>
 
 
-  <p>&copy; 2024 My Website. All rights reserved.</p>
-</footer>
-</body>
+
+<div style="width: 100% ; margin: 0 ; padding: 0">
+
+  <footer class="text-white text-center text-lg-start" style="background-color: #333;; width: 100%;">
+    <!-- Grid container -->
+    <div class="p-4">
+      <!--Grid row-->
+      <div class="row mt-4">
+        <!--Grid column-->
+        <div class="col-lg-4 col-md-12 mb-4 mb-md-0">
+          <h5 class="text-uppercase mb-4">About company</h5>
+          We are an NGO with a mandate to help eradicate structural unemployment by implementing the skills we acquired in university.<br>
+          <div class="mt-4">
+            <!-- Social media icons -->
+            <a type="button" class="btn btn-floating btn-warning btn-lg"><i class="fab fa-facebook-f"></i></a>
+            <a type="button" class="btn btn-floating btn-warning btn-lg"><i class="fab fa-dribbble"></i></a>
+            <a type="button" class="btn btn-floating btn-warning btn-lg"><i class="fab fa-twitter"></i></a>
+            <a type="button" class="btn btn-floating btn-warning btn-lg"><i class="fab fa-google-plus-g"></i></a>
+          </div>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+          <ul class="fa-ul" style="margin-left: 1.65em;">
+            <li class="mb-3">
+              <span class="fa-li"><i class="fas fa-home"></i></span><span class="ms-2">Pretoria, South Africa</span>
+            </li>
+            <li class="mb-3">
+              <span class="fa-li"><i class="fas fa-envelope"></i></span><span class="ms-2">info@example.com</span>
+            </li>
+            <li class="mb-3">
+              <span class="fa-li"><i class="fas fa-phone"></i></span><span class="ms-2">+ 01 234 567 88</span>
+            </li>
+            <li class="mb-3">
+              <span class="fa-li"><i class="fas fa-print"></i></span><span class="ms-2">+ 01 234 567 89</span>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase mb-4">Opening hours</h5>
+          <table class="table text-center text-white">
+            <tbody class="font-weight-normal">
+            <tr>
+              <td>Mon - Thu:</td>
+              <td>8am - 9pm</td>
+            </tr>
+            <tr>
+              <td>Fri - Sat:</td>
+              <td>8am - 1am</td>
+            </tr>
+            <tr>
+              <td>Sunday:</td>
+              <td>9am - 10pm</td>
+            </tr>
+            </tbody>
+          </table>
+        </div>
+        <!--Grid column-->
+      </div>
+      <!--Grid row-->
+    </div>
+    <!-- Grid container -->
+
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2); width: 100%;">
+      © 2020 Copyright: PFUNZO.COM
+    </div>
+    <!-- Copyright -->
+  </footer>
+
+  </div>
+  </body>
 </html>
